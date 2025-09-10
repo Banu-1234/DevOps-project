@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
+const jwt = require("jsonwebtokn");
 const { Sequelize, DataTypes } = require("sequelize");
 
 const app = express();
@@ -131,4 +131,5 @@ sequelize.sync({ force: true }).then(async () => {
   ]);
 
   app.listen(3000, () => console.log("🚀 Server running on http://localhost:3000"));
+
 });
